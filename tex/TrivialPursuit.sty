@@ -4,7 +4,8 @@
 
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{TrivialPursuit}[2023/11/24 0.1.1 Present a Trivial Pursuit Board]
+\ProvidesPackage{TrivialPursuit}[2023/11/26 0.1.1 Present a Trivial Pursuit Board]
+% 0.1.1	Adding schemes of colors
 % 0.1.0	Initial version
 
 %====PACKAGES
@@ -15,6 +16,23 @@
 \RequirePackage{simplekv}
 \RequirePackage{xintexpr}
 \RequirePackage{listofitems}
+
+%====COLORS (tks to quark67)
+%styleA
+\definecolor{TPorangeA}{cmyk}{0,0.6,1,0}
+\definecolor{TPblueA}{cmyk}{0.7,0,0,0}
+\definecolor{TPbrownA}{cmyk}{0.3,0.5,0.7,0}
+\definecolor{TPgreenA}{cmyk}{0.7,0,0.8,0}
+\definecolor{TPpinkA}{cmyk}{0,0.6,0,0}
+\def\TPColorsA{yellow,TPorangeA,TPblueA,TPbrownA,TPgreenA,TPpinkA}
+%styleB
+\definecolor{TPyellowB}{cmyk}{0,0,0.75,0}
+\definecolor{TPorangeB}{cmyk}{0,0.25,0.95,0}
+\definecolor{TPblueB}{cmyk}{0.65,0.1,0.1,0}
+\definecolor{TPbrownB}{cmyk}{0.15,0.3,0.85,0}
+\definecolor{TPgreenB}{cmyk}{0.3,0,0.95,0}
+\definecolor{TPpinkB}{cmyk}{0.0,0.65,0.4,0}
+\def\TPColorsB{TPyellowB,TPorangeB,TPblueB,TPbrownB,TPgreenB,TPpinkB}
 
 %====KEYS [FR]
 \defKV[TrivPurs]{%

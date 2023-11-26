@@ -21,8 +21,8 @@
 \hypersetup{pdfborder=0 0 0}
 \usepackage[margin=2cm]{geometry}
 \setlength{\parindent}{0pt}
-\def\TPversion{0.1.0}
-\def\TPdate{24 novembre 2023}
+\def\TPversion{0.1.1}
+\def\TPdate{26 novembre 2023}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,hooks,listingsutf8}
 \usepackage{soul}
@@ -135,6 +135,7 @@ Les packages chargés et utilisés par \MontreCode{TrivialPursuit} sont :
 
 \begin{quote}
 \begin{verbatim}
+0.1.1 : Ajout de palettes de couleurs prédéfinies
 0.1.0 : Version initiale
 \end{verbatim}
 \end{quote}
@@ -215,4 +216,24 @@ Les \textsf{clés} disponibles sont :
 		\faAtom,\faBalanceScaleLeft,\faBell}
 ]
 \end{tcblisting}
+
+\pagebreak
+
+\subsection{Palettes de couleurs prédéfinies}
+
+En complément (sur une suggestion de \textsf{quark67}), deux styles de couleurs ont été définies en interne :
+
+\begin{quote}
+\begin{verbatim}
+\TPColorsA
+\TPColorsB
+\end{verbatim}
+\end{quote}
+
+\begin{tcblisting}{colframe=lightgray,colback=lightgray!5}
+\PlateauTrivialPursuit[Unite=0.5,ListeCouleurs=\TPColorsA]
+\PlateauTrivialPursuit[Unite=0.5,ListeCouleurs=\TPColorsB]
+\end{tcblisting}
+
+
 \end{document}

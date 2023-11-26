@@ -21,8 +21,8 @@
 \hypersetup{pdfborder=0 0 0}
 \usepackage[margin=2cm]{geometry}
 \setlength{\parindent}{0pt}
-\def\TPversion{0.1.0}
-\def\TPdate{24 novembre 2023}
+\def\TPversion{0.1.1}
+\def\TPdate{26/11/2023}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,hooks,listingsutf8}
 \usepackage{soul}
@@ -135,6 +135,7 @@ Loaded are useful package are :
 
 \begin{quote}
 \begin{verbatim}
+0.1.1 : Adding two schemes of colors
 0.1.0 : Initial version
 \end{verbatim}
 \end{quote}
@@ -214,5 +215,23 @@ Available \textsf{keys} are :
 		\faAddressCard,\faAngleDoubleRight,\faAngry[regular],%
 		\faAtom,\faBalanceScaleLeft,\faBell}
 ]
+\end{tcblisting}
+
+\pagebreak
+
+\subsection{Schemes of colors}
+
+In addition (on a suggestion from \textsf{quark67}), two color styles have been defined internally :
+
+\begin{quote}
+\begin{verbatim}
+\TPColorsA
+\TPColorsB
+\end{verbatim}
+\end{quote}
+
+\begin{tcblisting}{colframe=lightgray,colback=lightgray!5}
+\BoardTrivialPursuit[Unit=0.5,ListColors=\TPColorsA]
+\BoardTrivialPursuit[Unit=0.5,ListColors=\TPColorsB]
 \end{tcblisting}
 \end{document}
