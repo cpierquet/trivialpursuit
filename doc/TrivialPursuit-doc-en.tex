@@ -21,8 +21,8 @@
 \hypersetup{pdfborder=0 0 0}
 \usepackage[margin=2cm]{geometry}
 \setlength{\parindent}{0pt}
-\def\TPversion{0.1.1}
-\def\TPdate{26/11/2023}
+\def\TPversion{0.1.2}
+\def\TPdate{21/10/2024}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,hooks,listingsutf8}
 \usepackage{soul}
@@ -135,6 +135,7 @@ Loaded are useful package are :
 
 \begin{quote}
 \begin{verbatim}
+0.1.2 : Key [ShortVersion] in order to reduce number of border cells
 0.1.1 : Adding two schemes of colors
 0.1.0 : Initial version
 \end{verbatim}
@@ -160,7 +161,9 @@ All the available keys are presented in the following paragraph, but concerning 
 %
 \BoardTrivialPursuit[Radius=4,BorderHeight=1.25] %beware of the rendering...
 
-\BoardTrivialPursuit[Unit=0.33] %'optimal' rendering
+\BoardTrivialPursuit[Unit=0.33]
+%
+\BoardTrivialPursuit[Unit=0.33,ShortVersion]
 \end{tcblisting}
 
 \pagebreak
@@ -188,7 +191,8 @@ Available \textsf{keys} are :
 	\item \MontreCode{Blank} := boolean for an empty board, and \MontreCode{false} by default ;
 	\item \MontreCode{Unit} := to precis an unit (better than a scale !), and \MontreCode{1} by default ;
 	\item \MontreCode{Thickness} := thickness of the borders, and \MontreCode{0.8pt} by default ;
-	\item \MontreCode{Rotation} := possible rotation of the board, and \MontreCode{0} by default.
+	\item \MontreCode{Rotation} := possible rotation of the board, and \MontreCode{0} by default ;
+	\item \MontreCode{ShortVersion} := use 5 cells instead 6 between 'big cells', and \MontreCode{false} by default.
 \end{itemize}
 
 \begin{tcblisting}{colframe=lightgray,colback=lightgray!5}

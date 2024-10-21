@@ -21,8 +21,8 @@
 \hypersetup{pdfborder=0 0 0}
 \usepackage[margin=2cm]{geometry}
 \setlength{\parindent}{0pt}
-\def\TPversion{0.1.1}
-\def\TPdate{26 novembre 2023}
+\def\TPversion{0.1.2}
+\def\TPdate{21 octobre 2024}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,hooks,listingsutf8}
 \usepackage{soul}
@@ -135,6 +135,7 @@ Les packages chargés et utilisés par \MontreCode{TrivialPursuit} sont :
 
 \begin{quote}
 \begin{verbatim}
+0.1.2 : Ajout d'une clé [VersionCourte] pour diminuer le nombre de cases
 0.1.1 : Ajout de palettes de couleurs prédéfinies
 0.1.0 : Version initiale
 \end{verbatim}
@@ -160,7 +161,9 @@ Toutes les clés disponibles sont présentées dans le paragraphe suivant, mais 
 %
 \PlateauTrivialPursuit[Rayon=4,HauteurCases=1.25] %attention au rendu...
 
-\PlateauTrivialPursuit[Unite=0.33] %le rendu est 'optimal'
+\PlateauTrivialPursuit[Unite=0.33]
+%
+\PlateauTrivialPursuit[Unite=0.33,VersionCourte]
 \end{tcblisting}
 
 \pagebreak
@@ -188,7 +191,8 @@ Les \textsf{clés} disponibles sont :
 	\item \MontreCode{Vide} := booléen pour afficher le plateau vide, et valant \MontreCode{false} par défaut ;
 	\item \MontreCode{Unite} := pour préciser l'unité (et gérer un facteur d'échelle), et valant \MontreCode{1} par défaut ;
 	\item \MontreCode{Epaisseur} := épaisseur des tracés, et valant \MontreCode{0.8pt} par défaut ;
-	\item \MontreCode{Rotation} := rotation éventuelle du plateau, et valant \MontreCode{0} par défaut.
+	\item \MontreCode{Rotation} := rotation éventuelle du plateau, et valant \MontreCode{0} par défaut ;
+	\item \MontreCode{VersionCourte} := utiliser 5 cases au lieu de 6 entre les camemberts, et valant \MontreCode{false} par défaut.
 \end{itemize}
 
 \begin{tcblisting}{colframe=lightgray,colback=lightgray!5}
